@@ -5,7 +5,6 @@ import { To } from 'history'
 import { NavigateOptions } from 'react-router-dom'
 import { createReducerManager } from 'app/providers/StoreProvider/config/reducerManager'
 import { $api } from 'shared/api/api'
-import { tabsReducer } from 'shared/ui/Tabs'
 
 export function createReduxStore(
 	initialState?: StateSchema,
@@ -15,7 +14,6 @@ export function createReduxStore(
 	const rootReducers: ReducersMapObject<StateSchema> = {
 		...asyncReducers,
 		counter: counterReducer,
-		tabs: tabsReducer,
 	}
 
 	const reducerManager = createReducerManager(rootReducers)

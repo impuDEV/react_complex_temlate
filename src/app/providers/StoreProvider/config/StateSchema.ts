@@ -3,11 +3,9 @@ import { AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject } f
 import { AxiosInstance } from 'axios'
 import { To } from 'history'
 import { NavigateOptions } from 'react-router-dom'
-import { TabsSchema } from 'shared/ui/Tabs'
 
 export interface StateSchema {
     counter: CounterSchema
-    tabs: TabsSchema
 
     // Async reducers
 }
